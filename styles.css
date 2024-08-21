@@ -1,0 +1,404 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: transparent; /* Fully transparent */
+    color: white;
+    padding: 10px 0;
+    text-align: right; /* Align navigation to the right */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
+    margin: 0;
+    padding-right: 20px; /* Space between Contact and end of the line */
+}
+
+nav ul li {
+    margin: 0 30px; /* Increased spacing between items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, border-bottom 0.3s; /* Transition for color and border */
+    padding: 5px 10px; /* Add some padding for better effect */
+}
+
+nav ul li a:hover {
+    color: #9966cc; /* Amethyst color */
+    border-bottom: 2px solid #9966cc; /* Amethyst underline on hover */
+}
+
+nav ul li a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.section {
+    display: none;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    flex: 1; /* Allow sections to grow */
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.section.active {
+    display: flex;
+    opacity: 1;
+}
+
+.intro {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #800080; /* Purple color */
+}
+
+.epita-link {
+    color: #007bff; /* Blue color */
+    text-decoration: none;
+}
+
+.epita-link:hover {
+    text-decoration: underline;
+}
+
+.changing-text {
+    font-size: 1.5em;
+    color: #800080; /* Purple color */
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: #800080; /* Purple color */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: #800080; /* Purple color */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    text-align: center; /* Center the text horizontally */
+}
+
+section#about .content,
+section#projects .content,
+section#contact .content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+section#about p,
+section#projects p,
+section#contact p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin-bottom: 40px;
+}
+
+.download-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.download-btn i {
+    margin-right: 10px;
+}
+
+.download-btn:hover {
+    background-color: white;
+    color: #800080;
+}
+
+footer {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label, form input, form textarea, form button {
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+.skills-choice {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Space between the skill choice boxes */
+    margin-top: 30px;
+}
+
+.skill-box {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-box h3 {
+    font-size: 1.5em;
+    color: #800080; /* Purple color */
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between skill cards */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 40px; /* Space between skill choice and skill grid */
+}
+
+.skill {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Existing styles... */
+
+.skills-choice {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Space between the skill choice boxes */
+    margin-top: 30px;
+}
+
+.skill-box {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-box h3 {
+    font-size: 1.5em;
+    color: #800080; /* Purple color */
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between skill cards */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 40px; /* Space between skill choice and skill grid */
+}
+
+.skill {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Basic styling for the Projects section */
+/* Basic styling for the Projects section */
+/* Basic styling for the Projects section */
+/* Basic styling for the Projects section */
+/* Basic styling for the Projects section */
+/* Container for projects */
+/* Container for projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between boxes */
+    padding: 20px; /* Space around the grid */
+}
+
+/* Style for each project box */
+.project-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border with transparency */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Internal padding */
+    backdrop-filter: blur(10px); /* Blurring effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin: 0 auto; /* Center the boxes horizontally */
+    color: #000; /* Default text color */
+}
+
+/* Title styling */
+.project-box h3 {
+    color: #8a2be2; /* Violet color for project titles */
+    margin-top: 0;
+}
+
+/* Styling for objectives and roles */
+.project-box p strong {
+    color: #8a2be2; /* Electric violet for labels like "Objective" and "Role" */
+}
+
+/* Role styling */
+.project-box .role strong {
+    color: #9966cc; /* Amethyst color for roles */
+}
+
+/* Default text color */
+.project-box p {
+    color: #000; /* Black color for regular text */
+}
+
+/* Style for the section heading */
+#projects h2 {
+    color: #8a2be2; /* Violet color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANKAOUI Mohamed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section active">
+        <div class="intro">
+            <div class="left">
+                <img src="file.png" alt="Young man coding" class="profile-image">
+            </div>
+            <div class="right">
+                <h1>Hello there, I'm <span class="highlight">Mohamed LANKAOUI</span></h1>
+                <h2 class="changing-text"><span id="typewriter"></span><span class="cursor">|</span></h2>
+                <div class="buttons">
+                    <button data-section="about">About Me</button>
+                    <button data-section="contact">Contact</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>
+                My name is <span class="highlight">Mohamed Lankaoui</span>, and I am currently a <span class="highlight">Computer Science</span> student with a strong background in scientific preparatory classes. My educational journey has equipped me with a solid foundation of knowledge and expertise, particularly through my coursework at <a href="https://www.epita.fr/" class="epita-link" target="_blank">EPITA</a>. I have accumulated extensive experience in a variety of technical and scientific projects, which has significantly enhanced my understanding and skills in multiple aspects of IT. My exposure to these projects has not only honed my technical abilities but also sparked a deep interest in project management within the IT sector.
+            </p>
+            <p>
+                Throughout my studies, I have developed a broad technical expertise and a wealth of experience in managing complex projects. These experiences have provided me with valuable insights into the intricacies and challenges of various technical domains, and have prepared me to handle such tasks effectively. I am particularly passionate about the intersection of technology and management, and I am <span class="highlight">eager to apply</span> and further develop my skills in an innovative company. My <span class="highlight">enthusiasm</span> for continuous learning and my commitment to excellence drive me to seek out opportunities where I can contribute meaningfully while growing professionally. I am <span class="highlight">excited</span> about the prospect of leveraging my extensive technical background and project management skills to make a positive impact in the field of IT project management.
+            </p>
+            <button class="download-btn" onclick="window.location.href='resume.pdf';">
+                <i class="fas fa-file"></i> Download Resume
+            </button>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        
+        <!-- Project grid container -->
+        <div class="project-grid">
+            <!-- Each project is now in a div with class "project-box" -->
+            <div class="project-box">
+                <h3>Project 42sh</h3>
+                <p><strong>Objective:</strong> Develop a POSIX-compliant shell in C, complete with a comprehensive test suite.</p>
+                <p class="role"><strong>Role:</strong> Group Leader</p>
+                <p><strong>Details:</strong> Spearheaded a team of four in the creation of a POSIX-compliant shell named 42sh. Oversaw task delegation, project planning, and progress tracking. The shell featured essential functionalities such as command execution, piping, and redirection, and was rigorously tested with a custom test suite to ensure robustness and reliability. My leadership was pivotal in coordinating efforts, resolving conflicts, and ensuring timely delivery of the project milestones.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>TIGER Project</h3>
+                <p><strong>Objective:</strong> Design and implement a compiler for the Tiger programming language.</p>
+                <p class="role"><strong>Role:</strong> Coordinator and Task Monitor</p>
+                <p><strong>Details:</strong> Led the development of a compiler for the Tiger language, a project that required deep understanding of both language theory and practical compiler construction. Coordinated team activities, monitored task progress, and ensured alignment with project goals. The compiler featured lexical analysis, syntax parsing, semantic analysis, and code generation, demonstrating effective management and technical proficiency in compiler design.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>Ping</h3>
+                <p><strong>Objective:</strong> Develop an Integrated Development Environment (IDE) using JavaScript and Java.</p>
+                <p class="role"><strong>Role:</strong> Developer</p>
+                <p><strong>Details:</strong> Contributed to the development of an IDE called Ping, utilizing both JavaScript and Java to create a user-friendly and efficient development environment. Implemented features such as syntax highlighting, code completion, and debugging tools, significantly enhancing the user experience. My work involved integrating various components and ensuring seamless interaction between the frontend and backend.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>Chess</h3>
+                <p><strong>Objective:</strong> Build a chess game engine with move simulation capabilities.</p>
+                <p class="role"><strong>Role:</strong> Developer</p>
+                <p><strong>Details:</strong> Designed and implemented a chess game engine that included a fully functional chessboard and move simulation. Focused on developing algorithms for move validation, game state management, and AI opponent strategies. The project demonstrated my ability to handle complex game logic and ensure accurate representation of chess rules.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>Malloc</h3>
+                <p><strong>Objective:</strong> Reimplement a memory allocator in C.</p>
+                <p class="role"><strong>Role:</strong> Developer</p>
+                <p><strong>Details:</strong> Undertook the task of reimplementing a memory allocator, a crucial component of system programming. The project involved designing a custom memory management system with features such as allocation, deallocation, and efficient memory reuse. My implementation emphasized performance optimization and robustness, reflecting a deep understanding of low-level memory management.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>Myfind and Myprintf</h3>
+                <p><strong>Objective:</strong> Implement the find and printf commands in C, including various options.</p>
+                <p class="role"><strong>Role:</strong> Developer</p>
+                <p><strong>Details:</strong> Developed custom implementations of the find and printf commands, replicating their core functionalities and options. The find command allowed for directory traversal and file searching, while printf handled formatted output. These implementations were designed to closely mimic the behavior of their standard counterparts, showcasing my ability to recreate essential command-line utilities.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>JWS</h3>
+                <p><strong>Objective:</strong> Create the backend for a Bomberman game.</p>
+                <p class="role"><strong>Role:</strong> Backend Developer</p>
+                <p><strong>Details:</strong> Focused on the backend development of the Bomberman game, handling server-side logic and game state management. Implemented features such as player interactions, game updates, and network communication. My work ensured a smooth and responsive gameplay experience, demonstrating strong skills in backend development and real-time system handling.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>Boot Camps</h3>
+                <p><strong>Objective:</strong> Intensive learning of programming languages and technologies.</p>
+                <p class="role"><strong>Role:</strong> Participant</p>
+                <p><strong>Details:</strong> Completed a series of boot camps focused on mastering various programming languages, including JavaScript, SQL, Java, C, and C++. These intensive sessions provided a solid foundation in multiple technologies and programming paradigms, enhancing my versatility and problem-solving skills across different development environments.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>TIPE</h3>
+                <p><strong>Objective:</strong> Simulate virus propagation using a cellular automaton in Python.</p>
+                <p class="role"><strong>Role:</strong> Developer</p>
+                <p><strong>Details:</strong> Developed a cellular automaton model in Python to simulate the spread of a virus. The project involved designing and implementing algorithms to represent and track virus propagation within a grid-based environment. My work highlighted my ability to apply computational models to real-world scenarios and demonstrated proficiency in Python programming.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>Labyrinthe</h3>
+                <p><strong>Objective:</strong> Create a solvable maze, increase its complexity, and find the shortest path.</p>
+                <p class="role"><strong>Role:</strong> Developer</p>
+                <p><strong>Details:</strong> Designed and implemented a maze generation algorithm, focusing on creating complex, solvable mazes and developing algorithms to find the shortest path through them. The project showcased my skills in algorithm design, problem-solving, and implementation of pathfinding techniques.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>PMS</h3>
+                <p><strong>Objective:</strong> Analyze and manage a port’s financial and material resources for optimal efficiency.</p>
+                <p class="role"><strong>Role:</strong> Project Analyst</p>
+                <p><strong>Details:</strong> Conducted a comprehensive analysis of port operations, focusing on financial, material, and efficiency aspects. Developed recommendations for improving management practices and optimizing resource allocation. This project demonstrated my analytical skills and ability to deliver actionable insights for better port management.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>Zoglu</h3>
+                <p><strong>Objective:</strong> Organize the redesign of a company's network system.</p>
+                <p class="role"><strong>Role:</strong> Project Manager</p>
+                <p><strong>Details:</strong> Managed the redesign of a company's network infrastructure, overseeing the evaluation of current systems and planning the integration of new technologies. Coordinated with stakeholders to ensure the new system met organizational needs and improved network performance. My role involved strategic planning, resource management, and implementation oversight.</p>
+            </div>
+    
+            <div class="project-box">
+                <h3>ERO</h3>
+                <p><strong>Objective:</strong> Develop IT solutions for snow removal in Montreal.</p>
+                <p class="role"><strong>Role:</strong> Project Lead</p>
+                <p><strong>Details:</strong> Led the research and development of IT solutions to address snow removal challenges in Montreal. Focused on creating systems to optimize snow clearing operations, including data analysis and system integration. My leadership in this project emphasized practical problem-solving and innovative approaches to urban management issues.</p>
+            </div>
+        </div>
+    </section>    
+
+    <section id="skills" class="section">
+        <div class="content">
+            <h2>Skills</h2>
+            <div class="skills-choice">
+                <div class="skill-box" id="hard-skills-btn">
+                    <h3>Hard Skills</h3>
+                </div>
+                <div class="skill-box" id="soft-skills-btn">
+                    <h3>Soft Skills</h3>
+                </div>
+            </div>
+            
+            <div id="hard-skills" class="skills-grid" style="display: none;">
+                <div class="skill">
+                    <h3>Graphic Design Software</h3>
+                    <p>Photoshop: Image editing and creation software</p>
+                    <p>InDesign: Page layout software for print and digital documents</p>
+                    <p>Illustrator: Vector illustration creation software</p>
+                </div>
+                <div class="skill">
+                    <h3>Project Management and Version Control Tools</h3>
+                    <p>Jira: Project management and task tracking tool</p>
+                    <p>Git: Version control system</p>
+                    <p>GitHub: Hosting platform for projects using Git</p>
+                    <p>GitLab: Project management platform using Git</p>
+                </div>
+                <div class="skill">
+                    <h3>Programming Languages and Frameworks</h3>
+                    <p>HTML: Markup language for creating web pages</p>
+                    <p>CSS: Style language for web page presentation</p>
+                    <p>JavaScript: Programming language for web development</p>
+                    <p>Java: Object-oriented programming language</p>
+                    <p>Python: Versatile programming language</p>
+                    <p>Bash POSIX: Shell and scripting language for Unix/Linux systems</p>
+                    <p>R: Programming language for statistics and data analysis</p>
+                    <p>Node.js: JavaScript runtime environment for server-side development</p>
+                    <p>React.js: JavaScript library for building user interfaces</p>
+                    <p>Vue.js: JavaScript framework for building user interfaces</p>
+                </div>
+                <div class="skill">
+                    <h3>Data Management Software</h3>
+                    <p>SQL: Query language for managing databases</p>
+                    <p>MySQL: Relational database management system</p>
+                    <p>MongoDB: NoSQL database management system</p>
+                </div>
+                <div class="skill">
+                    <h3>Office Tools</h3>
+                    <p>Excel: Spreadsheet software</p>
+                    <p>Word: Word processing software</p>
+                    <p>PowerPoint: Presentation software</p>
+                </div>
+            </div>
+    
+            <div id="soft-skills" class="skills-grid" style="display: none;">
+                <div class="skill">
+                    <h3>Leadership</h3>
+                    <p>Member of my school's communication team, leading initiatives and organizing student events.</p>
+                </div>
+                <div class="skill">
+                    <h3>Organization</h3>
+                    <p>Planning and managing school events, meeting deadlines and coordinating resources.</p>
+                </div>
+                <div class="skill">
+                    <h3>Teamwork</h3>
+                    <p>Participation in group school projects and a former member of a basketball team, learning cooperation and mutual support.</p>
+                </div>
+                <div class="skill">
+                    <h3>Communication</h3>
+                    <p>Experience in interpersonal communication and writing within my school's communication team.</p>
+                </div>
+                <div class="skill">
+                    <h3>Pedagogy and Knowledge Transfer</h3>
+                    <p>Experience in teaching and tutoring, with the ability to explain complex concepts clearly and adapt methods to individual needs.</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mohamed LANKAOUI. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
