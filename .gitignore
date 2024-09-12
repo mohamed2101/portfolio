@@ -28,7 +28,6 @@ Thumbs.db
 
 # Ignore unnecessary media files (if you want to include only specific images)
 *.jpeg
-*.png
 *.gif
 
 # You can also specify any other files you want to ignore here
