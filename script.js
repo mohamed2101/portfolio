@@ -15,37 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Contact form submission handler
-    document.querySelector('form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(this);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            message: formData.get('message')
-        };
-        
-        fetch('https://formspree.io/f/your-form-id', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-        .then(response => {
-            if (response.ok) {
-                alert('Your message has been sent successfully!');
-                this.reset();
-            } else {
-                alert('There was an error sending your message. Please try again.');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('There was an error sending your message. Please try again.');
-        });
-    });
 
     // Typewriter effect
     const textArray = ["Computer Science Student", "Project Manager", "Business Analyst", "IT Consultant", "Scrum Master", "Product Owner", "Systems Analyst", "Data Analyst"];

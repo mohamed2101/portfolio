@@ -402,3 +402,29 @@ form button:hover {
     margin-bottom: 20px; /* Space below the heading */
     text-align: center; /* Center align the heading */
 }
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #6a0dad; /* This is a shade of purple. You can adjust as needed. */
+}
+
+.contact-icon i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.contact-icon span {
+    font-size: 16px;
+}
+
+.contact-icon img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
